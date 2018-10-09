@@ -154,3 +154,28 @@ Here are my priorities:
 2. Consider and watch every job opportunity and not be blinded by arrogance
 3. Manage my own project from start to end, devoting some time to it each day
 4. Exercise my design thinking to take advantage of my free time
+
+
+
+---
+
+
+
+## Create your personalized learning plan
+
+### Aim for the right level
+
+**[Full stack developer]** - I aspire to be able to feel confident enough to apply for Full stack developers positions, verified by effective applications to at least 3 job offers in MedTech or GreenTech, before March 2019. 
+
+This makes my target level **Specific, Measurable, and Time-based**.
+
+
+<br>
+
+
+### Break down your subjects for study into actions
+
+**Actions**:
+* Learn the relationship between various IT elements (web, databases, mobiles, etc) - *deliberate practice*
+* Learn the advantages, drawbacks and uses of popular/frequent programming languages (C, C#, Java, Python, Swift, Ruby, Javascript, etc) - *deliberate practice + complementary activity*
+* Reach proficiency in popular languages (C, Java, Javascript, Swift) - *deliberate practice*
