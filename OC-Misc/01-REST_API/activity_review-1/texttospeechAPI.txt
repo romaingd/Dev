@@ -1,0 +1,6 @@
+curl -X POST -u "apikey:NDR8fEKk5QJWwIt3z-XKUS0_1TLGatcDRCXUiASv-YiU" \
+--header "Content-Type: application/json" \
+--header "Accept: audio/wav" \
+--data '{"text": "hello my name is Theo"}' \
+--output hello_world.wav \
+"https://gateway-lon.watsonplatform.net/text-to-speech/api/v1/synthesize"
