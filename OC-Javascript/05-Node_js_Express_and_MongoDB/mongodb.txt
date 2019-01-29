@@ -1,0 +1,5 @@
+// MongoDB logs
+// harryroselmackthegreat@gmail.com / H@rry2017
+// User: harry / harryros
+//
+// SRV: mongodb+srv://harry:<PASSWORD>@go-fullstack-fmhoo.mongodb.net/test?retryWrites=true

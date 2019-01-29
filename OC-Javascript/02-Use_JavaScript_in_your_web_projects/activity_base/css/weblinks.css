@@ -1,0 +1,29 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+span {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.link {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.banner {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: lightblue;
+    font-size: 120%;
+    color: darkcyan;
+}
+
+input {
+    margin: 10px;
+}

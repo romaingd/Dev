@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/weblinks.css">
+    <title>Activity</title>
+</head>
+
+<body>
+    <h1>Activity</h1>
+    <div id='banner' class="banner"></div>
+    <button id="add-link-button" onclick="displayAddingForm()">Add link</button>
+    <p></p>
+    <div id="form-div" style="padding: 10">
+        <form id="addLinkForm" style="display: inline-block">
+            <input type="text" name="author" id="author" style="margin: 10" required placeholder="Your name"></input>
+            <input type="text" name="title" id="title" style="margin: 10" required placeholder="Link title"></input>
+            <input type="text" name="url" id="url" style="margin: 10" required placeholder="Link URL"></input>
+        </form>
+        <input type="submit" value="Add" style="display: inline-block" onclick="handleSubmit(event)">
+    </div>
+    <!-- New elements are added in this tag -->
+    <div id="content"></div>
+
+    <script src="../js/weblinks.js"></script>
+</body>
+
+</html>
+
+    
