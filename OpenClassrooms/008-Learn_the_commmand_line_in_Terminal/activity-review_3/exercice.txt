@@ -1,0 +1,164 @@
+
+3n6ma@3n6ma-PC ~
+$ pwd
+/home/3n6ma
+
+3n6ma@3n6ma-PC ~
+$ ls
+'Le FMI'   Macro   Management   paintings   Proba
+
+3n6ma@3n6ma-PC ~
+$ mkdir exercice
+
+3n6ma@3n6ma-PC ~
+$ cd exercice/
+
+3n6ma@3n6ma-PC ~/exercice
+$ mkdir art-museum-website artworks
+
+3n6ma@3n6ma-PC ~/exercice
+$ cd art
+art-museum-website/ artworks/
+
+3n6ma@3n6ma-PC ~/exercice
+$ ls
+art-museum-website  artworks
+
+3n6ma@3n6ma-PC ~/exercice
+$ cd art-museum-website/
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ mkdir css img js 404.html index.html about.html contact.html robot.txt
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ ls
+404.html  about.html  contact.html  css  img  index.html  js  robot.txt
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ cd css
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/css
+$ mkdir main.css
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/css
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ cd js/
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/js
+$ mkdir main.jss
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/js
+$ ls
+main.jss
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/js
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ cd css
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/css
+$ ls
+main.css
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website/css
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice/art-museum-website
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice
+$ cd artworks/
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ mkdir paintings
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice
+$ cd ..
+
+3n6ma@3n6ma-PC ~
+$ ls
+ exercice  'Le FMI'   Macro   Management   paintings   Proba
+
+3n6ma@3n6ma-PC ~
+$ cd paintings/
+
+3n6ma@3n6ma-PC ~/paintings
+$ ls
+guernica.jpg  mona-lisa.jpg  the-starry-night.jpg  water-lilies.jpg
+
+3n6ma@3n6ma-PC ~/paintings
+$ mv guernica.jpg  ~/exercice/artworks/paintings
+
+3n6ma@3n6ma-PC ~/paintings
+$ mv mona-lisa.jpg ~/exercice/artworks/paintings
+
+3n6ma@3n6ma-PC ~/paintings
+$ ls
+the-starry-night.jpg  water-lilies.jpg
+
+3n6ma@3n6ma-PC ~/paintings
+$ mv the-starry-night.jpg water-lilies.jpg ~/exercice/artworks/paintings
+
+3n6ma@3n6ma-PC ~/paintings
+$ ls
+
+3n6ma@3n6ma-PC ~/paintings
+$ cd ..
+
+3n6ma@3n6ma-PC ~
+$ ls
+ exercice  'Le FMI'   Macro   Management   paintings   Proba
+
+3n6ma@3n6ma-PC ~
+$ cd exercice/
+
+3n6ma@3n6ma-PC ~/exercice
+$ ls
+art-museum-website  artworks
+
+3n6ma@3n6ma-PC ~/exercice
+$ cd artworks/
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ ls
+paintings
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ cd paintings/
+
+3n6ma@3n6ma-PC ~/exercice/artworks/paintings
+$ ls
+guernica.jpg  mona-lisa.jpg  the-starry-night.jpg  water-lilies.jpg
+
+3n6ma@3n6ma-PC ~/exercice/artworks/paintings
+$ cd ..
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ mkdir artist-info
+
+3n6ma@3n6ma-PC ~/exercice/artworks
+$ cd artist-info/
+
+3n6ma@3n6ma-PC ~/exercice/artworks/artist-info
+$ touch leonardo-da-vinci.txt
+
+3n6ma@3n6ma-PC ~/exercice/artworks/artist-info
+$ touch claude-monet.txt
+
+3n6ma@3n6ma-PC ~/exercice/artworks/artist-info
+$ touch pablo-picaso.txt
+
+3n6ma@3n6ma-PC ~/exercice/artworks/artist-info
+$ touch vincent-van-gogh.txt
+
+3n6ma@3n6ma-PC ~/exercice/artworks/artist-info
+$ ls
+claude-monet.txt       pablo-picaso.txt  vincent-van-gogh.txt
+leonardo-da-vinci.txt  term-paper.txt
+

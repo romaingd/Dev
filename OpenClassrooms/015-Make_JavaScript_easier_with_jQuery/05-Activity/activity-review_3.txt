@@ -1,0 +1,17 @@
+CodePen document that features HTML, CSS, and JavaScript: 
+
+https://codepen.io/faresk93/pen/BMaJNz
+
+------------------------------------------------------------
+
+JSON CodePen document that includes album JSON in the JS section:
+
+https://codepen.io/faresk93/pen/MLgBOo.js
+
+------------------------------------------------------------------
+
+separate HTML CodePen document that includes the HTML of the page's album section:
+
+https://codepen.io/faresk93/pen/KJKyOm.html
+
+------------------------------------------------------------------------------------

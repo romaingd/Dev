@@ -1,0 +1,89 @@
+body {
+  font-family: 'Raleway', serif;
+  background-color: #eef;
+  color: #259;
+}
+
+header {
+    background-color: #eef;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#259;
+}
+
+
+
+
+footer {
+  background-color: #eef;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer .btn-primary {
+    border-radius: 70%;
+}
+
+
+nav img {
+  width: 100%;
+}
+
+/* Styles pour les smartphones
+ #left, #side1, #side2 {
+  padding: 10px 10px 0 10px;
+}
+
+ */
+
+
+h1 {
+  color:#259;
+  font-family: 'Raleway', serif;
+
+}
+.logo {
+  width: 80px;
+}
+
+
+
+/* Styles pour les smart */
+@media (max-width: 767px) {
+
+
+    .title_header {
+        margin: 0 auto;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) {
+
+    .title_header {
+        margin-left: 50px;
+
+    }
+
+
+
+}
+
+/* Styles pour les écrans moyens et grands */
+@media (min-width: 992px) {
+
+
+    .title_header {
+        margin: 0 auto;
+
+    }
+
+}

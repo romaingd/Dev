@@ -1,0 +1,71 @@
+[
+    {
+        "artist": "Don Diego de la Vega",
+        "name": "Zorro sings XMas songs",
+        "year": 1987,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Wade Wilson",
+        "name": "Deadpool sings XMas songs",
+        "year": 1988,
+        "nbtracks": 11
+    },
+
+    {
+        "artist": "Bruce Wayne",
+        "name": "Batman sings XMas songs",
+        "year": 1989,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Francis",
+        "name": "Ajax sings XMas songs",
+        "year": 1987,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Peter Parker",
+        "name": "Spiderman sings XMas songs",
+        "year": 1988,
+        "nbtracks": 11
+    },
+
+    {
+        "artist": "Clark Kent",
+        "name": "Superman sings XMas songs",
+        "year": 1989,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Erik Lehnsherr",
+        "name": "Magneto sings XMas songs",
+        "year": 1987,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Bruce Banner",
+        "name": "Hulk sings XMas songs",
+        "year": 1988,
+        "nbtracks": 11
+    },
+
+    {
+        "artist": "Tony Stark",
+        "name": "Iron Man sings XMas songs",
+        "year": 1989,
+        "nbtracks": 10
+    },
+
+    {
+        "artist": "Logan",
+        "name": "Wolverine sings XMas songs",
+        "year": 1987,
+        "nbtracks": 10
+    }
+]

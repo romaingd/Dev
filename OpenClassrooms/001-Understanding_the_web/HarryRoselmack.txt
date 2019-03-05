@@ -1,0 +1,23 @@
+Hello to you reader!
+
+My name is Harry Roselmack, and I am new to the tech field and very excited about it.
+Let's start with a couple lines on my personal background. I am a French journalist, 
+mostly known for my work on radio and television. I studied History (and of course 
+journalism), so this is a new adventure to me.
+
+I unfortunately have no past tech experience to analyze, but what led me here is the
+observation that journalists only have little knwoledge of how computers and the web
+work, while it seemed of great importance to me. After some research, I got even more
+interested and I am now considering reconversion to the tech field, because I believe
+there are awesome techniques that could be used to bring formidable tools for everyone,
+especially journalists.
+
+For these reasons, I find myself rather attracted to the job of mobile developer, since
+I am convinced that mobile applications are parts of tomorrow's swiss-knife (the mobile 
+phone), and I'd like every one to be granted access to such powerful tools for their 
+everyday life. I think my goal is to develop a couple of mobile apps on my own, to
+leverage all the insights and understanding of the needs of non-tech people, in order
+to maximize the impact I can have on today's society.
+
+Cheers to that!
+Harry

@@ -1,0 +1,102 @@
+
+kelvin@DESKTOP11 /
+$ cd /c/
+
+kelvin@DESKTOP11~/Desktop/art-museum-website/js
+$ cd ..
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ touch 404.html
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ touch index.html
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website
+$ touch about.html
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ touch contact.html
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ touch robots.txt
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ ^C
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ clear
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ cd ..
+
+kelvin@DESKTOP11~/Desktop
+$ mkdir artworks
+
+kelvin@DESKTOP11~/Desktop
+$ cd art
+art-museum-website/ artworks.rar
+artworks/           artworks.zip
+
+kelvin@DESKTOP11~/Desktop
+$ cd artworks
+
+kelvin@DESKTOP11~/Desktop/artworks
+$ mkdir paintings
+
+kelvin@DESKTOP11~/Desktop/artworks
+$ mkdir artist-info
+
+kelvin@DESKTOP11~/Desktop/artworks
+$ cd artist-info
+
+kelvin@DESKTOP11~/Desktop/artworks/artist-info
+$ touch leonardo-da-vinci.txt
+
+kelvin@DESKTOP11~/Desktop/artworks/artist-info
+$ touch claude-monet.txt
+
+kelvin@DESKTOP11~/Desktop/artworks/artist-info
+$ touch  pablo-picasso.txt
+
+kelvin@DESKTOP11 ~/Desktop/artworks/artist-info
+$ touch vincent-van-gogh.txt
+
+kelvin@DESKTOP11~/Desktop/artworks/artist-info
+$ cd ..
+
+kelvin@DESKTOP11~/Desktop/artworks
+$ cd ..
+
+kelvin@DESKTOP11~/Desktop
+$ cd Andela
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ ls
+git_project/  mona-lisa.jpg         water-lilies.jpg
+guernica.jpg  the-starry-night.jpg
+
+kelvin@DESKTOP11 ~/Desktop/Andela
+$ cp  mon-lis.jpg   ^C
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp mon-lisa.jpg  ~/Desktop/artworks
+cp: cannot stat 'mon-lisa.jpg': No such file or directory
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp mon-lisa.jpg  ~/Desktop/artworks/paintings
+cp: cannot stat 'mon-lisa.jpg': No such file or directory
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp mona-lisa.jpg  ~/Desktop/artworks/paintings
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp water-lilies.jpg  ~/Desktop/artworks/paintings
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp guernica.jpg  ~/Desktop/artworks/paintings
+
+kelvin@DESKTOP11~/Desktop/Andela
+$ cp the-starry-night.jpg  ~/Desktop/artworks/paintings
+
+kelvin@DESKTOP11~/Desktop/Andela
+$

@@ -1,0 +1,32 @@
+===== Suggestions to improve the website =====
+
+* Overall, the appearance on mobile devices looks pretty good, so no need
+to do anything on this point. Tested on Galaxy S5 and most iPhone versions.
+
+* The website takes a very long time to fully load: 2.5 seconds for the main 
+part, plus resources that are periodically fetched (see loading_screenshot.txt)
+It is very likely possible to reduce this loading time in order to keep more
+users connected and to fluidify the experience. This is true for online
+(no throttling) settings; it is even more important for slower connection
+speeds, where the website takes an unacceptable amount of time to load.
+
+* The website does not use HTTPS, which is recommended even for sites that 
+don't handle sensitive data. To quote Chrome's DevTools, "HTTPS prevents
+intruders from tampering with or passively listening in on the communications
+between your app and your users, and is a prerequisite for HTTP/2 and many new
+web platform APIs". Switching to HTTPS would be an important security
+improvement.
+
+* Using cache more efficiently. The audits run detected almost 100 static
+resources that could be cached more efficiently in order to speed up repeated
+visits on the page. This should obviously be balanced with the cost of caching
+many resources.
+
+* Improving the accessibility of the website. This means including `alt` 
+attributes in all images, structuring the elements in a consistent fashion and
+making sure they describe sufficiently well the associated contents, etc. The
+current state is pretty good already in this regard.
+
+* Following best practices. This includes for example avoiding 
+`document.write()` to dynamically load external scripts (delaying the total
+loading time).

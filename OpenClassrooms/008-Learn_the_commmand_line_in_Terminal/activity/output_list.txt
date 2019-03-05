@@ -1,0 +1,32 @@
+~/.../08-Learn_the_commmand_line_in_Terminal/activity$ mkdir art-museum-website
+~/.../08-Learn_the_commmand_line_in_Terminal/activity$ cd art-museum-website
+~/.../activity/art-museum-website$ mkdir css img js
+~/.../activity/art-museum-website$ touch css/main.css js/main.js 404.html index.html about.html contact.html robots.txt
+~/.../activity/art-museum-website$ cd ..
+~/.../08-Learn_the_commmand_line_in_Terminal/activity$ mkdir artworks
+~/.../08-Learn_the_commmand_line_in_Terminal/activity$ cd artworks
+~/.../activity/artworks$ mv ~/Downloads/paintings ./
+~/.../activity/artworks$ mkdir artist-info
+~/.../activity/artworks$ cd artist-info
+~/.../artworks/artist-info$ touch leonardo-da-vinci.txt claude-monet.txt pablo-picasso.txt vincent-van-gogh.txt
+~/.../artworks/artist-info$ cd ../..
+~/.../08-Learn_the_commmand_line_in_Terminal/activity$ ls -R artworks/ art-museum-website/
+art-museum-website/:
+404.html  about.html  contact.html  css  img  index.html  js  robots.txt
+
+art-museum-website/css:
+main.css
+
+art-museum-website/img:
+
+art-museum-website/js:
+main.js
+
+artworks/:
+artist-info  paintings
+
+artworks/artist-info:
+claude-monet.txt  leonardo-da-vinci.txt  pablo-picasso.txt  vincent-van-gogh.txt
+
+artworks/paintings:
+guernica.jpg  mona-lisa.jpg  the-starry-night.jpg  water-lilies.jpg

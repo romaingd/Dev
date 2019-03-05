@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/4f2d1a40e0.js"></script>
+    <title>Architecture</title>
+
+    <style type="text/css"> 
+
+        /* Styles de base */
+        body {
+          font-family: 'Bitter', serif;
+          background-color: #eef;
+          color: #259;
+        }
+       a{
+         color: #259;
+       }
+       a:hover{
+         color: rgb(31, 105, 202)
+       }
+        nav img {
+          width: 100%;
+        }
+        .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+            padding:0;
+            margin:0;
+        }
+        #side1, #side2 {
+            padding: 10px 0 0px  0px;
+          } 
+          #title{
+            background-color: #eef;
+          }
+        
+  
+        /* Styles pour les mdartphones */
+        
+  
+        /* Styles pour les tablettes */
+        @media (min-width: 768px) {
+          #left{
+            padding: 0;
+          } 
+          #side1 {
+            padding: 10px 5px 0px 0px;
+          } 
+          #side2 {
+            padding: 10px 0 0px 5px;
+          }
+        }
+  
+        /* Styles pour les écrans moyens et grands */
+        @media (min-width: 992px) {
+          #side1, #side2 {
+            padding: 0 0 10px 10px;
+          } 
+          body{
+            
+          }
+        }
+        .no-padding {
+        padding-left: 0;
+        padding-right: 0;
+        }
+        #title{
+            padding-bottom: 20px;
+        }
+
+        
+    </style>
+
+</head>
+
+    <body>
+      <div id="title"class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 text-center">
+                    <img class="img-fluid d-none d-md-inline-block" src="images/home.png" id="home-img" alt="">
+                </div>
+                <h1 class="col-md-8 col-lg-4 text-center my-auto display-3">Architecture</h1>
+            </div>
+        </div>
+      </div>
+
+
+<section class="container-fuid" style="display:none">
+            <div class="row">
+                <div class="col-lg-8 col-md-12"><img id='left'src="images/city1.jpg" class="img-fluid"alt=""></div>
+                <div class="col-lg-4 col-md-12">
+                    <img  id="side1"class="img-fluid col-lg-12 col-md-6 col-sm-12" src="images/side1.jpg" alt="">
+                    <img id="side2"src="images/side2.jpg" alt="" class="img-fluid col-lg-12 col-md-6 col-sm-12">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid">
+    <div class="row">
+        <div id="left"class="col-md-12 col-lg-8 text-center"><img src="images/city1.jpg" class="img-fluid"></div>
+        <div class="row col-md-12 col-lg-4">
+          <div id="side1"class="col-lg-12 col-md-6 text-center"><img src="images/side1.jpg" class="img-fluid w-100"></div>
+        <div id="side2"class="col-lg-12 col-md-6 text-center"><img src="images/side2.jpg" class="img-fluid w-100"></div>
+      </div>
+    </div>
+</section>
+
+<section>
+    <div class="container" style="display:none">
+        <div class="bg-danger W-25 mx-auto text-right">Here are some words which say things</div>
+        <div class="bg-warning w-50 mx-auto text-left">Here are some words which say things</div>
+        <div class="bg-success w-75 mx-auto text-right">Here are some words which say things</div>
+        <div class="bg-info mx-auto text-left">Here are some words which say things</div>
+    </div>
+</section>
+
+<section class="container pb-5 pt-3">
+  <div class="row justify-content-center">
+    <a href="http://www.twitter.com" target="_blank">
+      <div class="col-xs-1 text-center">
+        <span class="fa-stack fa-lg fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+    </a>
+    <a href="http://www.facebook.com" target="_blank">
+      <div class="col-xs-1 text-center">
+        <span class="fa-stack fa-lg fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/clydespyd/" target="_blank">
+      <div class="col-xs-1 text-center">
+        <span class="fa-stack fa-lg fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+    </a>
+    <a href="http://www.youtube.com" target="_blank">
+      <div class="col-xs-1 text-center">
+        <span class="fa-stack fa-lg fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+    </a>
+    <a href="https://open.spotify.com/user/kangkodos/playlist/3lCRVDvqHD9dspakJ1R0JC?si=aZRPvQM9RyWo65xhkKo1gw" target="_blank">
+      <div class="col-xs-1 text-center">
+        <span class="fa-stack fa-lg fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+      <script src = "js/bootstrap.min.js"> </script> 
+  </body>
+  
+
+    
+</html>

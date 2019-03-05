@@ -1,0 +1,156 @@
+body {
+  font-family: Helvetica;
+  
+  background: black url(https://media.giphy.com/media/5a6IkssTZRI08/200.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+}
+
+.header {
+  /*position: fixed;
+  left: 55px;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*text-align: center;*/
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px 0px;
+  width: 88%;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: white outset 3px;
+}
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 0px;
+  width: 88%;
+  margin: 20px auto;
+  border-radius: 7px;
+  border: inset white 3px;
+}
+a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px auto;
+  
+}
+a:hover {
+  background-color: grey;
+  border-radius: 7px;
+   
+}
+#buy {
+  
+  position: relative;
+  color: white;
+  bottom: 45px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 3px outset white;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: transparent;
+  
+  
+}
+#buy:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.albums {
+  display: flex;
+  flex-flow: row wrap;
+  /*text-align: center;*/
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 0px;
+  width: 90%;
+  list-style: none;
+   /* border: white inset 3px;
+  border-radius: 7px;*/
+}
+
+.item {
+  display: inline-block;
+  flex-grow: 1;
+  /*vertical-align: top;*/
+/*   height: 100px; */
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 7px;
+  border: white inset 3px;
+  width: 25%;
+  height: 350px;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 0px 0px;
+  text-align: center;
+  margin: 5px;
+}
+.item:hover {
+  background-color: grey;
+  border-radius: 7px;
+}
+.available {
+   color: white;
+}
+
+/*.sold-out {
+  color: red;
+  text-decoration: line-through;
+}*/
+
+button {
+  flex-grow: 1;
+  color: white;
+  /*margin: 20px auto 0px auto;*/
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  margin: 0px auto;
+  border-radius: 7px;
+  border: none; /* Remove borders */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+
+}
+button:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+#coreStore {
+	display: none;
+	height: 400px;
+	overflow: auto;
+	
+}	
+img {
+	position: relative;
+	bottom: 40px;
+	margin: 0px;
+	padding: 0px;
+	border: solid white 2px;
+	border-radius: 0px 0px 5px 5px;
+}
+#title {
+    position: relative;
+	bottom: 20px;
+	border: solid white 2px;
+	border-radius: 5px 5px 0px 0px;
+}
+#artist {
+	position: relative;
+	bottom: 33px;
+	margin: 0px;
+	madding: 0px;
+}

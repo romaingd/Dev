@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="Justin Robles">
+    <link rel="stylesheet" href="../css/weblinks.css">
+    <title>Activity</title>
+</head>
+
+<body>
+    <h1>Activity</h1>
+	<div id="confirmation"></div>
+	<button id="addLink" onclick="showForm(event)">Add link</button>
+	<form id="formProper" onsubmit="event.preventDefault(); submitForm();">
+			<input type="text" id="username" placeholder="Your name" required>
+			<input type="text" id="linkTitle" placeholder="Link title" required>
+			<input type="text" id="linkURL" placeholder="Link URL" required>
+			<input type="submit" id="submitButton" value="Add">
+	</form>
+	<br>
+    <!-- New elements are added in this tag -->
+    <div id="content">
+    </div>
+
+    <script src="../js/weblinks.js"></script>
+</body>
+
+</html>

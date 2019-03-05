@@ -1,0 +1,63 @@
+
+kelvin@DESKTOP11 /
+$ cd /c/
+
+kelvin@DESKTOP11/c
+$ cd Users
+
+kelvin@DESKTOP11/c/Users
+$ cd Hija
+
+kelvin@DESKTOP11 ~
+$ cd Desktop
+
+kelvin@DESKTOP11 ~/Desktop
+$ mkdir art-museum-website
+
+kelvin@DESKTOP11~/Desktop
+$ cd art-museum-website/
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website
+$ mkdir css
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website
+$ cd css
+
+kelvin@DESKTOP11~/Desktop/art-museum-website/css
+$ touch main.css
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website/css
+$ cd ..
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ mkdir img
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ mkdir js
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ cd js
+
+kelvin@DESKTOP11~/Desktop/art-museum-website/js
+$ touch main.js
+
+kelvin@DESKTOP11~/Desktop/art-museum-website/js
+$ cd ..
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website
+$ touch 404.html
+
+kelvin@DESKTOP11~/Desktop/art-museum-website
+$ touch index.html
+
+kelvin@DESKTOP11 ~/Desktop/art-museum-website
+$ touch about.html
+
+Hija@DESKTOP-K6VHLJ5 MINGW64 ~/Desktop/art-museum-website
+$ touch contact.html
+
+Hija@DESKTOP-K6VHLJ5 MINGW64 ~/Desktop/art-museum-website
+$ touch robots.txt
+
+Hija@DESKTOP-K6VHLJ5 MINGW64 ~/Desktop/art-museum-website
+$

@@ -1,0 +1,248 @@
+Administrator@PROGRAMMERS ~
+$ pwd
+/home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~
+$ cd desktop
+-bash: cd: desktop: No such file or directory
+
+Administrator@PROGRAMMERS ~
+$ clear
+
+Administrator@PROGRAMMERS ~
+$ dir
+
+Administrator@PROGRAMMERS ~
+$ ls
+
+Administrator@PROGRAMMERS ~
+$ pwd
+/home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/Desktop
+-bash: cd: /home/Administrator/Desktop: No such file or directory
+
+Administrator@PROGRAMMERS ~
+$ cd /home
+
+Administrator@PROGRAMMERS /home
+$ dir
+Administrator
+
+Administrator@PROGRAMMERS /home
+$ cd /Administrator
+-bash: cd: /Administrator: No such file or directory
+
+Administrator@PROGRAMMERS /home
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ mkdir Coders
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/Coders
+
+Administrator@PROGRAMMERS ~/Coders
+$ touch welcome.txt
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ open welcome.txt
+-bash: open: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ ls
+welcome.txt
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ welcome
+-bash: welcome: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ ls Administrator
+ls: cannot access 'Administrator': No such file or directory
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd..\
+> ^C
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~/Coders
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ mkdir art-museum-website
+
+Administrator@PROGRAMMERS ~
+$ mkdir css
+
+Administrator@PROGRAMMERS ~
+$ mkdir img
+
+Administrator@PROGRAMMERS ~
+$ mkdir js
+
+Administrator@PROGRAMMERS ~
+$ mkdir 404.html
+
+Administrator@PROGRAMMERS ~
+$ mkdir index.html
+
+Administrator@PROGRAMMERS ~
+$ mkdir about.html
+
+Administrator@PROGRAMMERS ~
+$ touch 404.html
+
+Administrator@PROGRAMMERS ~
+$ touch index.html
+
+Administrator@PROGRAMMERS ~
+$ touch about.html
+
+Administrator@PROGRAMMERS ~
+$ touch contact.html
+
+Administrator@PROGRAMMERS ~
+$ touch robots.txt
+
+Administrator@PROGRAMMERS ~
+$ cd css
+
+Administrator@PROGRAMMERS ~/css
+$ touch main.css
+
+Administrator@PROGRAMMERS ~/css
+$ cd..
+-bash: cd..: command not found
+
+Administrator@PROGRAMMERS ~/css
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/art-museum-website
+
+Administrator@PROGRAMMERS ~/art-museum-website
+$ ls
+404.html  about.html  contact.html  css  img  index.html  js  robots.txt
+
+Administrator@PROGRAMMERS ~/art-museum-website
+$ dir
+404.html  about.html  contact.html  css  img  index.html  js  robots.txt
+
+Administrator@PROGRAMMERS ~/art-museum-website
+$ cd /css
+-bash: cd: /css: No such file or directory
+
+Administrator@PROGRAMMERS ~/art-museum-website
+$ cd css
+
+Administrator@PROGRAMMERS ~/art-museum-website/css
+$ ls
+main.css
+
+Administrator@PROGRAMMERS ~/art-museum-website/css
+$ cd /home/Administrator/art-museum-website
+
+Administrator@PROGRAMMERS ~/art-museum-website
+$ cd js
+
+Administrator@PROGRAMMERS ~/art-museum-website/js
+$ ls
+
+Administrator@PROGRAMMERS ~/art-museum-website/js
+$ touch main.js
+
+Administrator@PROGRAMMERS ~/art-museum-website/js
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ mkdir artworks
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/artwork
+-bash: cd: /home/Administrator/artwork: No such file or directory
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/artworks
+
+Administrator@PROGRAMMERS ~/artworks
+$ mkdir paintings
+
+Administrator@PROGRAMMERS ~/artworks
+$ cd paintings
+
+Administrator@PROGRAMMERS ~/artworks/paintings
+$ touch mona-lisa.jpg
+
+Administrator@PROGRAMMERS ~/artworks/paintings
+$ touch water-lilies.jpg
+
+Administrator@PROGRAMMERS ~/artworks/paintings
+$ touch guernica.jpg
+
+Administrator@PROGRAMMERS ~/artworks/paintings
+$ touch the-starry-night.jpg
+
+Administrator@PROGRAMMERS ~/artworks/paintings
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/artworks
+
+Administrator@PROGRAMMERS ~/artworks
+$ mkdir artist-info
+
+Administrator@PROGRAMMERS ~/artworks
+$ cd artist-info
+
+Administrator@PROGRAMMERS ~/artworks/artist-info
+$ touch leonardo-da-vinci.txt
+
+Administrator@PROGRAMMERS ~/artworks/artist-info
+$ touch claude-monet.txt
+
+Administrator@PROGRAMMERS ~/artworks/artist-info
+$ touch pablo-picasso.txt
+
+Administrator@PROGRAMMERS ~/artworks/artist-info
+$ touch vincent-van-gogh.txt
+
+Administrator@PROGRAMMERS ~/artworks/artist-info
+$ cd /home/Administrator
+
+Administrator@PROGRAMMERS ~
+$ cd /home/Administrator/artworks
+
+Administrator@PROGRAMMERS ~/artworks
+$ output.txt
+-bash: output.txt: command not found
+
+Administrator@PROGRAMMERS ~/artworks
+$ >output.txt
+
+Administrator@PROGRAMMERS ~/artworks
+$ script logs.txt
+-bash: script: command not found
+
+Administrator@PROGRAMMERS ~/artworks
+$
