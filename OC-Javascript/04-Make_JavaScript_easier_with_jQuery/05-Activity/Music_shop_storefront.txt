@@ -1,7 +1,0 @@
-The three links asked in the instructions are the following:
-    * A link to the main CodePen document that features HTML, CSS, and JavaScript
-        https://codepen.io/harryros/pen/BMjQxp?editors=1111
-    * A link to the separate JSON CodePen document that includes album JSON in the JS section
-        https://codepen.io/harryros/pen/pGgNZa.js
-    * A link to the separate HTML CodePen document that includes the HTML of the page's album section
-        https://codepen.io/harryros/pen/ErPNRG.html
