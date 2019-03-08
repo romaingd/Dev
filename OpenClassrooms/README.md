@@ -20,8 +20,8 @@
 * [x] **Learn the command line in Terminal** - 008<br><br>
 * [x] **Build your web projects with REST APIs** - 017 - French version
 * [x] Deploy Rails Applications - 011 - Couldn't use AWS, so just notes and no certificate<br><br>
-* [ ] Deploy apps on Heroku<br><br>
-* [ ] Stay up to date on technology
+* [x] **Deploy apps on Heroku** - 020<br><br>
+* [x] **Stay up to date on technology** - No folder needed
 
 
 <br>
