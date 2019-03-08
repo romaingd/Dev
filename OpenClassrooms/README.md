@@ -19,7 +19,7 @@
 * [x] **Build dynamic websites with Rails** - 010
 * [x] **Learn the command line in Terminal** - 008<br><br>
 * [x] **Build your web projects with REST APIs** - 017 - French version
-* [ ] Deploy Rails Applications<br><br>
+* [x] Deploy Rails Applications - 011 - Couldn't use AWS, so just notes and no certificate<br><br>
 * [ ] Deploy apps on Heroku<br><br>
 * [ ] Stay up to date on technology
 
