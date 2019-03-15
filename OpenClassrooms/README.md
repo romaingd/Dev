@@ -42,4 +42,4 @@
 ## Off-path courses
 
 * [x] **Go full-stack with Node.js, Express, and MongoDB** - 019
-* [x] Optimize your website with DevTools - 018
+* [x] **Optimize your website with DevTools** - 018
