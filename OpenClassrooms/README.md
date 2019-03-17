@@ -27,6 +27,14 @@
 <br>
 
 
+## Data architect path
+
+* [ ] Distributed computing for Big data - 021
+
+
+<br>
+
+
 ## JavaScript general knowledge
 
 * [x] **Learn to code with Javascript** - 012
