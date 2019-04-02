@@ -1,0 +1,146 @@
+
+Auteur : Alexandre Sauve
+
+Pour lancer les jobs
+$ cd <mission>
+$ make
+$ make best20
+$ make clean
+
+
+
+####################################################
+############   MISSION 1 :  TF-IDF   ###############
+####################################################
+
+#### Taches python
+
+1) Task1-Count
+    Mapper:   WordCountMapper.py  <= str
+		=> (word[str], file_id[str]) \t 1
+    Reducer:  WordPerDocReducer.py
+		=> (word[str], doc_id[str]) \t (wordcount[int], wordsperdoc[int])
+2) Task2-TFIDF
+    Mapper:   Identity.py (assure le tri des clefs par mots en sortie)
+		=> (word[str], doc_id[str]) \t (wordcount[int], wordsperdoc[int])
+    Reducer:  TFIDF_Reducer.py
+		=> (word[str], doc_id[str]) \t w_td[float]
+
+
+#### Livrable : 20 mots avec la plus forte ponderation TF-IDF
+
+cd mission1-TF-IDF && make
+
+hdfs dfs -cat /user/lex/results2/* | python3 ./TFIDF_Sorter.py | head -20
+('buck', 'hdfs://macfil:9000/user/lex/input/callwild')	0.01713237109519947
+('dogs', 'hdfs://macfil:9000/user/lex/input/callwild')	0.0060951704857921205
+('thornton', 'hdfs://macfil:9000/user/lex/input/callwild')	0.004447827111253709
+('friday', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.0036257552694398077
+('spitz', 'hdfs://macfil:9000/user/lex/input/callwild')	0.003294686749076821
+('sled', 'hdfs://macfil:9000/user/lex/input/callwild')	0.003294686749076821
+('francois', 'hdfs://macfil:9000/user/lex/input/callwild')	0.002855395182533245
+("buck's", 'hdfs://macfil:9000/user/lex/input/callwild')	0.0025808379534435102
+('trail', 'hdfs://macfil:9000/user/lex/input/callwild')	0.002251369278535828
+('thoughts', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.002248373379373288
+('john', 'hdfs://macfil:9000/user/lex/input/callwild')	0.002196457832717881
+('perrault', 'hdfs://macfil:9000/user/lex/input/callwild')	0.00203172349526404
+('team', 'hdfs://macfil:9000/user/lex/input/callwild')	0.0016473433745384106
+('traces', 'hdfs://macfil:9000/user/lex/input/callwild')	0.0015375204829025167
+('board', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.0014381487381576888
+('sol-leks', 'hdfs://macfil:9000/user/lex/input/callwild')	0.0014276975912666226
+('dave', 'hdfs://macfil:9000/user/lex/input/callwild')	0.0012629632538127815
+('corn', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.001235592577853789
+('cave', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.0012153369618233992
+('voyage', 'hdfs://macfil:9000/user/lex/input/defoe-robinson-103.txt')	0.001195081345793009
+
+
+
+
+####################################################
+###########   MISSION 2 : Page Rank   ##############
+####################################################
+
+
+J'ai rencontre un probleme avec la formule du cours qui ne converge pas 
+si utilisee telle quelle. Apres recherche j'ai constate qu'il faut
+rendre la matrice T stochastique. Ce qui correspond en pratique à remplir
+les lignes vides de T par des lignes contenant la valeur 1/N.
+
+Pour plus de details sur cette modification de T, voir la formule (2)
+dans le document suivant qui decrit tres bien la formulation matricielle:
+https://www.i2m.univ-amu.fr/perso/thierry.gallouet/licence.d/anum.d/projet-pagerank.pdf
+
+
+## Pour calculer le produit matriciel:
+La methode du cours a ete implementee dans le cadre de la methode classique GIM-V.
+Le calcul consiste en deux stage map-reduce:
+- Le stage 1 fait la multiplication vecteur-matrice
+- Le stage 2 fait la somme des produits partiels
+
+
+### Taches Java
+
+Driver: PageRankDriver.java
+ => gere les iterations et executant NITER fois Stage1 et Stage2
+
+Stage 1
+  Inputs
+	- la matrice d'adjacence brute contenue dans adj_list
+        - le vecteur x_i-i (sauf a l'iteration 0 ou il est initialise)
+
+  # Calcul de la matrice P et ajout des vecteurs
+  Mapper:  asauve/pagerank/PageRankProductMapper.java   
+	   La cle est l'index de ligne (le pid dans le fichier adj_list)
+	   La sortie contiens des donnees heterogenes identifiees par le 
+	   premier charactere
+	=> <row index> \t x<value>                 // vecteur x_i[k]
+	=> <row index> \t P<column index>:<value>  // ligne P[k,*]
+
+  # Calcule les produits partiels
+  Reducer: asauve/pagerank/PageRankProductReducer.java
+	   La cle de sortie est <column index> 
+           Il y a N produits partiels  x[k]*T[*,k] par cle
+	=> <column index> \t <product> 
+
+Stage 2
+  # Identite
+  Mapper:  asauve/pagerank/PageRankSumMapper.java
+	=> identite (la cle est positionnee par le premier reducer)
+
+  # Calcule les sommes pour les produits partiels sur chaque colonne de P
+  Reducer: asauve/pagerank/PageRankSumReducer.java
+	   La cle est identique est devient l'index du vecteur x_i+1
+	=> <row index> \t x<value>
+
+
+
+###############  Livrable: 20 meilleurs Page Rank ###################
+###  pour 14 iterations (6H sur un Core2 Duo a 3GHz)
+###  les 11 premier rangs sont stables
+###  std(x_{i}-x_{i-1}) = 2.7e-6
+
+$ make best20
+hdfs dfs -cat `printf prank%03d 14`/* | grep x | sed -e s/x// | python3 ./TFIDF_Sorter.py | head -20
+218	0.023839384891201184
+1	0.00759614809060777
+6680	0.006175938531728644
+2999	0.005998800920786913
+7830	0.0058642881002057565
+6230	0.005451990343676649
+681	0.005237338178512026
+4230	0.0052259177376534904
+1980	0.005117324630353334
+7386	0.004273161682319321
+164	0.003924399952842294
+7252	0.003859346002671641
+6897	0.0038493271541706333
+2126	0.003767642006865451
+3937	0.003757846350916714
+6896	0.0037071910822403403
+2786	0.0035830620622485264
+76	0.0034522498430107056
+3636	0.0032654551652153566
+2788	0.003196500986971236
+
+
+
