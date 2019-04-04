@@ -29,7 +29,9 @@
 
 ## Data architect path
 
-* [ ] Distributed computing for Big data - 021
+* [x] Distributed computing for Big data - 021
+* [x] **Design Big Data architectures** - 022
+* [ ] Process real-time data streams - 023
 
 
 <br>
