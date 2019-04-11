@@ -1,0 +1,61 @@
+1) Importez le jeu de données tour-pedia.json dans une base de données “tourPedia” avec une collection “paris” :
+
+"mongoimport -d tourPedia -c paris c:\data\tourpedia_paris.json" 
+
+
+2) iltrez les lieux par type “accommodation” et service “blanchisserie” :
+
+db.getCollection("paris").find(
+    { 
+        "category" : "accommodation", 
+        "services" : "blanchisserie"
+    }
+);
+
+
+3) Projetez les adresses des lieux de type "accommodation" :
+
+db.getCollection("paris").find(
+    { "category" : "accommodation" }, 
+    {  "location.address" : 1.0 }
+);
+
+
+4) Filtrez les listes de commentaires (reviews) des lieux, pour lesquelles au moins un commentaire (reviews) est écrit en anglais (en) et a une note (rating) supérieure ou égale à 3;
+use tourPedia;
+
+db.getCollection("paris").find(
+    { 
+        "$and" : [
+            {"reviews.language" : "en"}, 
+            {"reviews.rating" : {"$gte" : NumberInt(3)} }, 
+            {"reviews.rating" : {"$not" : { "$lt" : NumberInt(3)}}}, 
+            {"reviews.rating" : {"$ne" : ""}}
+        ]
+    },
+  {"name" : 1,"reviews.language" : 1,"reviews.rating" : 1}
+);
+
+
+5) Groupez les lieux par catégorie et comptez les ;
+
+db.paris.aggregate( [ 
+	{$match : {} }, 
+	{ $group : {"_id" : "$category", "total" : {$sum : 1} } }
+] );
+
+ou bien :
+
+varSearch={$match : {} } ;
+varGroup = { $group : {"_id" : "$category", "total" : {$sum : 1} } };
+db.paris.aggregate( [ varSearch, varGroup ] );
+
+
+6) Créez un pipeline d’agrégation pour les lieux de catégorie "accommodation", et donnez le nombre de lieux par valeur de "services".
+
+varSearch ={$match : {"category":"accommodation"}} ;
+varUnwind = {$unwind : "$services"}
+varGroup = { $group : {"_id" : "$services", "total" : {$sum : 1} } };
+varProject = { $project : {"services":1, "_id":0}};
+db.paris.aggregate( [ varSearch, varUnwind , varGroup]) ;
+
