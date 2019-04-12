@@ -1,0 +1,5 @@
+{"aggs": {
+    "nb_per_year": {
+        "terms": {"field": "fields.year"}
+    }
+}}

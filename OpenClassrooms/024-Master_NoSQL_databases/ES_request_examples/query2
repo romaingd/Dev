@@ -1,0 +1,10 @@
+{"query":{
+    "bool": {
+        "should": [
+            { "match_phrase": { "fields.title": "Star Wars" }},
+            { "match": { "fields.actors": "Natalie Portman" }}
+        ],
+        "must": { "match": { "fields.directors": "George Lucas" }},
+        "must_not": { "match": {"fields.plot": "Anakin" }}
+    }
+}}

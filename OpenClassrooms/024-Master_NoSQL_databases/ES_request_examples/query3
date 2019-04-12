@@ -1,0 +1,8 @@
+{
+    "query": {
+        "bool":{
+            "must": {"match": {"fields.directors": "J.J. Abrams"}},
+            "should": {"range": {"fields.rating": {"gte": 5}}},
+            "filter": {"range": {"fields.release_date":
+                { "from": "2010-01-01", "to": "2015-12-31"}}}
+}}}

@@ -1,0 +1,15 @@
+{
+    "query": {
+        "bool": {
+            "must": {"match_phrase": {"fields.directors": "George Lucas"}}
+        }
+    },
+    "aggs": {
+        "average_rating": {
+            "avg": {"field": "field.rating"}
+        },
+        "average_rank": {
+            "avg": {"field": "fields.rank"}
+        }
+    }
+}
