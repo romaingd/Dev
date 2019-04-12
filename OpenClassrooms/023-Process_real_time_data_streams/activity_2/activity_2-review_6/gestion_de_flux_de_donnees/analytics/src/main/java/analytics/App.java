@@ -17,23 +17,21 @@ public class App
 	{
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("page-visits", new PageVisitSpout());
-		builder.setBolt("visit-counts", new VisitCountBolt(), 1)
-			.shuffleGrouping("page-visits");
-		builder.setBolt("user-visit-counts", new UserVisitCountBolt(), 2)
-			.fieldsGrouping("visit-counts", new Fields("userId"));
-		builder.setBolt("page-visit-counts", new PageVisitCountBolt(), 2)
-			.fieldsGrouping("visit-counts", new Fields("url"));
-        // Add UserPageVisitCount bolt to the topology with parameters:
-        // 1 hour window length, 30s sliding interval
-        builder.setBolt("user-page-visit-counts", new UserPageVisitCount().withWindow(BaseWindowedBolt.Duration.of(1000*60*60*1), BaseWindowedBolt.Duration.of(1000*30)), 2)
-            .fieldsGrouping("page-visits", new Fields("userId", "url"));
+    	builder.setBolt("user-page-visits-counts", new UserPageVisitCount()
+            .withWindow( 
+                BaseWindowedBolt.Duration.of(1000*60*60), // window length  (visite sur la dernière heure d'après l'énoncé, soit 1000*60*60 ms)
+                BaseWindowedBolt.Duration.of(1000*30)     // sliding interval (toutes les 30 secondes, soit 30 000 ms)
+            )        
+        )
+    		.fieldsGrouping("page-visits", new Fields("url","userId"));
+        // N.B.: Le regroupement se fait par couple (url,userId) afin d'avoir des statistiques correctes si le bold est exécuté
+        //       de manière distribuée sur plusieurs workers en même temps (demande de l'énoncé).
+            
 		StormTopology topology = builder.createTopology();
 		
 		Config config = new Config();
-        // FIXME Forgot to add this line
-        config.setMessageTimeoutSecs(3600);
+       	config.setMessageTimeoutSecs(3640); // on définit un time out supérieur à window length + time out (>3 630 000ms)
 		String topologyName = "analytics-topology";
-        
 		if(args.length > 0 && args[0].equals("remote")) {
 			StormSubmitter.submitTopology(topologyName, config, topology);
 		}

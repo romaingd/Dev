@@ -1,0 +1,4 @@
+worker-id: 99ab67af-691c-4ff0-8c68-21fc540093b5
+logs.users: []
+logs.groups: []
+topology.submitter.user: fabrice
