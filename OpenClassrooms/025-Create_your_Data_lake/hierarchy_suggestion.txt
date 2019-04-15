@@ -1,0 +1,24 @@
+/data/
+    dataset1/
+        raw/                    # Raw data
+            .snapshot/              # Snapshots of raw/
+        master/                 # Serialized files
+            objet1.avsc             # Avro schema
+            objet2.avsc
+            full/                   # Contains everything in .avro
+                .snapshot/              # Snapshots of master/full
+            sous-dataset-1/         # Contains .avro files
+            sous-dataset-2/
+            ...
+    dataset2/
+        raw/
+            .snapshot/
+        master/
+            objet3.avsc
+            objet4.avsc
+            full/
+                .snapshot/
+            sous-dataset-1/
+            sous-dataset-2/
+            ...
+    ...
