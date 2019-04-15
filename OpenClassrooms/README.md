@@ -31,7 +31,9 @@
 
 * [x] Distributed computing for Big data - 021
 * [x] **Design Big Data architectures** - 022
-* [ ] Process real-time data streams - 023
+* [x] Process real-time data streams - 023
+* [x] Master NoSQL databases - 024
+* [x] Create your Data Lake - 025
 
 
 <br>
@@ -42,7 +44,7 @@
 * [x] **Learn to code with Javascript** - 012
 * [x] **Use JavaScript in your web projects** - 013
 * [x] **Build web apps with ReactJS** - 014
-* [x] Make JavaScript easier with jQuery - 015
+* [x] **Make JavaScript easier with jQuery** - 015
 * [x] **Go full-stack with Node.js, Express, and MongoDB** - 019
 
 
