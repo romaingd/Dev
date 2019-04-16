@@ -39,6 +39,14 @@
 <br>
 
 
+## Chief Information Security Officer (cybersecurity) path
+
+* [x] **Discover the world of cybersecurity** - 026
+
+
+<br>
+
+
 ## JavaScript general knowledge
 
 * [x] **Learn to code with Javascript** - 012
