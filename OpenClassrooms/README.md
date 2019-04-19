@@ -42,6 +42,7 @@
 ## Chief Information Security Officer (cybersecurity) path
 
 * [x] **Discover the world of cybersecurity** - 026
+* [x] Take back control with Linux - 027
 
 
 <br>
