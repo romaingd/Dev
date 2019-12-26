@@ -42,7 +42,9 @@
 ## Chief Information Security Officer (cybersecurity) path
 
 * [x] **Discover the world of cybersecurity** - 026
-* [x] Take back control with Linux - 027
+* [x] **Take back control with Linux** - 027
+* [ ] Simulate network architecture with GNS3 - 028
+* [ ] Secure your data using cryptpgraphy - 029
 
 
 <br>
