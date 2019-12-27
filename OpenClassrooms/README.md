@@ -29,11 +29,11 @@
 
 ## Data architect path
 
-* [x] Distributed computing for Big data - 021
+* [x] **Distributed computing for Big data** - 021
 * [x] **Design Big Data architectures** - 022
-* [x] Process real-time data streams - 023
-* [x] Master NoSQL databases - 024
-* [x] Create your Data Lake - 025
+* [x] **Process real-time data streams** - 023
+* [x] **Master NoSQL databases** - 024
+* [x] **Create your Data Lake** - 025
 
 
 <br>
@@ -44,7 +44,7 @@
 * [x] **Discover the world of cybersecurity** - 026
 * [x] **Take back control with Linux** - 027
 * [ ] Simulate network architecture with GNS3 - 028
-* [ ] Secure your data using cryptpgraphy - 029
+* [ ] Secure your data using cryptography - 029
 
 
 <br>
